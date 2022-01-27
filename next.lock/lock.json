@@ -1,0 +1,5 @@
+{
+  "https://cdn.skypack.dev/-/gsap@v3.9.1-t658wdEr0dJeiBU7DVCh/dist=es2019,mode=imports/optimized/gsap.js": { "integrity": "sha512-0qseI5lAPOag0VBu3MD+pAwjS8S72b30kw+8AaJkQ/3vsi268N7lGjDlnVDlm8pFEgcpgXIbaDi9euZu4P9uAw==", "contentType": "application/javascript; charset=utf-8" },
+  "https://cdn.skypack.dev/gsap": { "integrity": "sha512-iq2UlTKz00Xwdd0i6hST2Uny7wmNODzcy7Mn0apl4vkxOCKyK4rxUT67QCBVnAtWq7jlu6W8n7aWH6csNcnzoA==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}
