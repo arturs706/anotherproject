@@ -31,7 +31,7 @@ const Hamburger = () => {
             x:1,
             ease: 'power2.easeInOut'
         }, 'start')
-
+        
         let loader = gsap.timeline({})
 
     loader.to('.bluee', {
@@ -81,7 +81,7 @@ const Hamburger = () => {
 
     return (
         <div className="fixed top-7 left-5 pointer z-50">
-        <div className="fixed z-50 bg-black rounded-full p-2 ">
+        <div className="fixed z-50 bg-black rounded-full p-2">
             <button className="bg-transparent border-none cursor-pointer outline-0 no-underline"
                 onClick={() => setIsOpen(!isOpen)}>
                 <svg viewBox="0 -1 13 10" className="h-7 w-9">
@@ -96,13 +96,13 @@ const Hamburger = () => {
             ?
             <section className=" main-section fixed left-0 top-0 w-full h-screen overflow-hidden backdrop-blur-2xl ">
                 <div className="flex items-center justify-center h-full px-32 py-42">
-                <div className="h-full w-full absolute left-0 top-0 bg-black "></div>
+                <div className="h-full w-full absolute left-0 top-0 bg-brand-900 "></div>
                 <svg className="h-full w-full absolute left-0 top-0 " viewBox="0 10 1000 1000" preserveAspectRatio="none">
-                    <path className="h-full w-full bluee fill-brand-50" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+                    <path className="h-full w-full bluee fill-brand-450" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
                     </svg>
                     <nav className="relative z-50 text-center">
                         <ul className="opacity-0" ref={menuRef}>
-                            <li><span className="text-4xl text-orange-50	">SĀKUMS</span></li>
+                            <li><span className="text-4xl text-brand-50	">SĀKUMS</span></li>
                             <li><span className="text-4xl text-orange-50	">PRECES</span></li>
                             <li><span className="text-4xl text-orange-50	">SAZINĀTIES AR MUMS</span></li>
                             <li><span className="text-4xl text-orange-50	">ATRAŠANĀS VIETA</span></li>
