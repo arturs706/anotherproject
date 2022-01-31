@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import gsap from 'https://cdn.skypack.dev/gsap';
+import Image from "next/image";
 
 const Hamburger = () => {
     const menuToggle_1Ref = useRef(null)
@@ -80,7 +81,9 @@ const Hamburger = () => {
     },[!isOpen])
 
     return (
-        <div className="fixed top-7 left-5 pointer z-50">
+        
+        <div className="fixed top-7 right-20 pointer z-50">
+           
         <div className="fixed z-50 bg-black rounded-full p-2">
             <button className="bg-transparent border-none cursor-pointer outline-0 no-underline"
                 onClick={() => setIsOpen(!isOpen)}>
@@ -102,7 +105,7 @@ const Hamburger = () => {
                     </svg>
                     <nav className="relative z-50 text-center">
                         <ul className="opacity-0" ref={menuRef}>
-                            <li><span className="text-4xl text-brand-50	">SĀKUMS</span></li>
+                            <li><span className="text-4xl text-brand-50">SĀKUMS</span></li>
                             <li><span className="text-4xl text-orange-50	">PRECES</span></li>
                             <li><span className="text-4xl text-orange-50	">SAZINĀTIES AR MUMS</span></li>
                             <li><span className="text-4xl text-orange-50	">ATRAŠANĀS VIETA</span></li>
