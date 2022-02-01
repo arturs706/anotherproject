@@ -81,9 +81,24 @@ const Hamburger = () => {
     },[!isOpen])
 
     return (
-        
+        <div className="relative z-50">
+            {/*Navigation*/}
+        <div className="bg-brand-450 ">
+            {/*Image*/}
+            <div className="pl-8">
+                <Image
+                    src="https://res.cloudinary.com/dyvgcv5se/image/upload/v1643298021/massage/niceone2_keukjd.svg"
+                    alt="Logo"
+                    layout="fixed"
+                    quality={100}
+                    width={110}
+                    height={110}
+                />
+            </div>
+        </div>
+        {/*Hamburger button along with the slide on the click*/}
         <div className="fixed top-7 right-20 pointer z-50">
-           
+         
         <div className="fixed z-50 bg-black rounded-full p-2">
             <button className="bg-transparent border-none cursor-pointer outline-0 no-underline"
                 onClick={() => setIsOpen(!isOpen)}>
@@ -93,6 +108,7 @@ const Hamburger = () => {
                     <path className="stroke-brand-450 stroke-[0.04rem]" d="M10,8 L2,8" ref={menuToggle_3Ref}></path>
                 </svg>
             </button>
+        </div>
         </div>
         {
             isOpen
